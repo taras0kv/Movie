@@ -1,3 +1,4 @@
+// src/data/movies.js
 export const movies = [
 	{
 		id: 1,
@@ -6,8 +7,7 @@ export const movies = [
 			'Історичний фільм про легендарного опришка Карпатських гір - Олексу Довбуша.',
 		genre: 'Історичний',
 		duration: 146,
-		posterUrl:
-			'https://kino-teatr.ua/public/posters/2023/08/10/evk9j4-small.jpg',
+		posterUrl: 'https://static.ukrinform.com/photos/2023_07/1689085880-132.jpg',
 		sessions: [
 			{ time: '10:00', hall: 'Зал 1' },
 			{ time: '14:30', hall: 'Зал 2' },
@@ -22,7 +22,7 @@ export const movies = [
 		genre: 'Драма',
 		duration: 97,
 		posterUrl:
-			'https://kino-teatr.ua/public/posters/2015/12/10/5hx4d3-small.jpg',
+			'https://upload.wikimedia.org/wikipedia/uk/a/ae/Teni_predkov_poster.jpg',
 		sessions: [
 			{ time: '11:30', hall: 'Зал 3' },
 			{ time: '16:00', hall: 'Зал 1' },
@@ -37,7 +37,7 @@ export const movies = [
 		genre: 'Воєнний',
 		duration: 112,
 		posterUrl:
-			'https://kino-teatr.ua/public/posters/2021/10/07/9qy6j1-small.jpg',
+			'https://upload.wikimedia.org/wikipedia/uk/a/ad/%D0%A7%D0%B5%D1%80%D0%B2%D0%BE%D0%BD%D0%B8%D0%B9_2017_%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80.jpg',
 		sessions: [
 			{ time: '09:45', hall: 'Зал 2' },
 			{ time: '13:15', hall: 'Зал 3' },
@@ -51,8 +51,7 @@ export const movies = [
 			'Комедійна дорожня історія про звукорежисера та його маму, що подорожують Закарпаттям.',
 		genre: 'Комедія',
 		duration: 103,
-		posterUrl:
-			'https://kino-teatr.ua/public/posters/2019/03/14/4vz7k8-small.jpg',
+		posterUrl: 'https://dzygamdb.com/images/origin/projects/175/f_6740.jpg',
 		sessions: [
 			{ time: '12:00', hall: 'Зал 1' },
 			{ time: '15:30', hall: 'Зал 2' },
@@ -67,7 +66,7 @@ export const movies = [
 		genre: 'Фантастика',
 		duration: 106,
 		posterUrl:
-			'https://kino-teatr.ua/public/posters/2019/09/04/6pz5n2-small.jpg',
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXlOLFdTYWLUZAmEuIKd_IMihEmbgtS2iRw&s',
 		sessions: [
 			{ time: '10:30', hall: 'Зал 3' },
 			{ time: '14:00', hall: 'Зал 1' },
@@ -82,7 +81,7 @@ export const movies = [
 		genre: 'Мелодрама',
 		duration: 98,
 		posterUrl:
-			'https://kino-teatr.ua/public/posters/2022/05/12/3wx7j5-small.jpg',
+			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9ebAhaqiElciwrSLlE49LwenPrtROCARWw&s',
 		sessions: [
 			{ time: '11:00', hall: 'Зал 2' },
 			{ time: '15:00', hall: 'Зал 3' },
@@ -97,7 +96,7 @@ export const movies = [
 		genre: 'Драма',
 		duration: 132,
 		posterUrl:
-			'https://kino-teatr.ua/public/posters/2014/05/15/2vy8k6-small.jpg',
+			'https://images.kinorium.com/movie/poster/551090/h280_3038498.jpg',
 		sessions: [
 			{ time: '10:15', hall: 'Зал 1' },
 			{ time: '13:45', hall: 'Зал 2' },
@@ -111,8 +110,7 @@ export const movies = [
 			"Документальна стрічка про сім'ю, яка живе в зоні бойових дій на Донбасі.",
 		genre: 'Документальний',
 		duration: 88,
-		posterUrl:
-			'https://kino-teatr.ua/public/posters/2020/03/05/7qx9n1-small.jpg',
+		posterUrl: 'https://images.kinobaza.com.ua/w2000/65923156e0e17.jpg.webp',
 		sessions: [
 			{ time: '12:30', hall: 'Зал 3' },
 			{ time: '16:30', hall: 'Зал 2' },

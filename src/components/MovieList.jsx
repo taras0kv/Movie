@@ -1,4 +1,3 @@
-// src/components/MovieList.jsx
 import React, { useState } from 'react'
 import MovieCard from './MovieCard'
 
@@ -19,10 +18,18 @@ const MovieList = ({ movies }) => {
 					onChange={e => setSearchTerm(e.target.value)}
 				/>
 			</div>
-			<div className='movie-list'>
-				{filteredMovies.map(movie => (
-					<MovieCard key={movie.id} movie={movie} />
-				))}
+
+			<div className='movie-columns'>
+				<div className='movie-column'>
+					{filteredMovies.slice(0, 4).map(movie => (
+						<MovieCard key={movie.id} movie={movie} />
+					))}
+				</div>
+				<div className='movie-column'>
+					{filteredMovies.slice(4, 8).map(movie => (
+						<MovieCard key={movie.id} movie={movie} />
+					))}
+				</div>
 			</div>
 		</div>
 	)

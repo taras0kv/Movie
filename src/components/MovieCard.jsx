@@ -16,10 +16,12 @@ const MovieCard = ({ movie }) => {
 			</div>
 			<div className='movie-content'>
 				<h2>{movie.title}</h2>
-				<p className='movie-description'>{movie.description}</p>
 				<div className='movie-details'>
 					<span className='genre'>{movie.genre}</span>
 					<span className='duration'>{movie.duration} хв</span>
+				</div>
+				<div className='movie-description-container'>
+					<p className='movie-description'>{movie.description}</p>
 				</div>
 				<div className='sessions'>
 					<h4>Сеанси:</h4>

@@ -1,4 +1,3 @@
-// src/data/movies.js
 export const movies = [
 	{
 		id: 1,

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './styles/CinemaHall.css'
+import '../styles/CinemaHall.css'
 
 const CinemaHall = ({ movieId }) => {
 	const [selectedSeats, setSelectedSeats] = useState([])

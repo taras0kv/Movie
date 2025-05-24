@@ -1,65 +1,182 @@
-.cinema-hall {
+.cinema-hall-container {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .screen {
-	width: 100%;
-	height: 30px;
-	background: #ddd;
-	margin: 20px 0 40px;
+	width: 90%;
+	height: 50px;
+	margin: 0 auto 40px;
+	background: linear-gradient(to bottom, #e0e0e0, #bdbdbd);
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 15px;
 	font-weight: bold;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	font-size: 1.2rem;
+	color: #333;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	text-transform: uppercase;
+}
+
+.screen:after {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: linear-gradient(to right, transparent, #ccc, transparent);
 }
 
 .seats-grid {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	margin-bottom: 30px;
 }
 
 .seat-row {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	gap: 10px;
 }
 
+.row-label {
+	width: 60px;
+	font-size: 0.9rem;
+	color: var(--primary-color);
+	font-weight: 600;
+	text-align: right;
+}
+
 .seat {
-	width: 30px;
-	height: 30px;
-	border-radius: 5px;
+	width: 35px;
+	height: 35px;
+	border-radius: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 0.9rem;
 	transition: all 0.2s;
+	color: white;
+	font-weight: bold;
+	position: relative;
 }
 
 .seat.available {
-	background: #4caf50;
-	color: white;
+	background-color: #27ae60;
+}
+
+.seat.available:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 10px rgba(39, 174, 96, 0.7);
 }
 
 .seat.selected {
-	background: #2196f3;
-	color: white;
+	background-color: #3498db;
+	transform: scale(1.05);
+	box-shadow: 0 0 10px rgba(52, 152, 219, 0.7);
+}
+
+.seat.booked {
+	background-color: red;
+	cursor: not-allowed;
+	opacity: 0.8;
+}
+
+.seats-legend {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.legend-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 0.9rem;
+}
+
+.legend-color {
+	width: 25px;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.legend-color.available {
+	background-color: #27ae60;
+}
+
+.legend-color.selected {
+	background-color: #3498db;
+}
+
+.legend-color.booked {
+	background-color: var(--secondary-color);
 }
 
 .selected-seats-info {
 	margin-top: 30px;
-	padding: 15px;
-	background: #f5f5f5;
-	border-radius: 5px;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px solid #eee;
 }
 
+.selected-seats-info h4 {
+	margin-bottom: 10px;
+	color: var(--primary-color);
+}
+
+/* Адаптивність для кінозалу */
 @media (max-width: 768px) {
+	.cinema-hall-container {
+		padding: 15px;
+	}
+
 	.seat {
-		width: 25px;
-		height: 25px;
-		font-size: 10px;
+		width: 28px;
+		height: 28px;
+		font-size: 0.8rem;
+	}
+
+	.row-label {
+		width: 50px;
+		font-size: 0.8rem;
+	}
+
+	.seats-legend {
+		gap: 15px;
+	}
+}
+
+@media (max-width: 480px) {
+	.seat {
+		width: 22px;
+		height: 22px;
+	}
+
+	.seat-row {
+		gap: 5px;
+	}
+
+	.row-label {
+		width: 40px;
+	}
+
+	.screen {
+		height: 40px;
+		padding-top: 10px;
+		font-size: 1rem;
 	}
 }

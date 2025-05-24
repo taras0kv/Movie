@@ -8,7 +8,7 @@ const Booking = () => {
 	return (
 		<div className='booking-page'>
 			<h2>Бронювання місць</h2>
-			<CinemaHall />
+			<CinemaHall movieId={id} /> {}
 		</div>
 	)
 }

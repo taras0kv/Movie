@@ -4,7 +4,6 @@ import '../styles/CinemaHall.css'
 const CinemaHall = ({ movieId }) => {
 	const [selectedSeats, setSelectedSeats] = useState([])
 
-	// Генеруємо місця (5 рядів по 10 місць)
 	const rows = 5
 	const seatsPerRow = 10
 
